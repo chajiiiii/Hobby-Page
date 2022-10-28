@@ -1,11 +1,11 @@
 body {
   font-family: 'Josefin Sans', sans-serif;
   margin: 0px;
-  width: 100vw;
   position: relative;
 }
 
 header {
+  width: 100%;
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
@@ -13,18 +13,25 @@ header {
 
 header h1 {
   margin: 0px;
-  height: 150px;
-  box-sizing: border-box;
-  font-size: 70px;
-  background-color: #0081a7;
+  height: 250px;
+  background-color: #f4afab;
   display: flex;
   text-align: center;
   align-items: center;
 }
 
-header p {
+.nav {
+  position: sticky;
+  margin-bottom: 0;
+  top: 0px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  background-color: #fed9b7;
+}
+
+.introduction p {
   margin: 0px;
-  height: 130px;
   padding: 20px 40px;
   display: flex;
   text-align: center;
@@ -38,45 +45,63 @@ header p {
 #title {
   width: 100%;
   color: white;
-}
-
-.big {
-  display: flex;
-}
-
-.nav {
-  padding: 20px;
-  height: 100vh;
-  width: 280px;
-  position: sticky;
-  top: 0px;
-  background-color: #fed9b7;
+  font-variant: small-caps;
+  font-size: 80px;
 }
 
 ul {
-  padding-left: 10px;
+  padding-top: 20px;
+  padding-left: 0px;
   font-size: 20px;
+  line-height: 1;
 }
 
 li {
-  padding: 5px 0px;
+  display: inline;
 }
 
-/* .nav :hover {
-  color: #f07167;
-} */
+li b {
+  padding: 20px;
+  font-size: 27px;
+}
+
+.navItem {
+  margin: 15px;
+  padding: 10px 8px 5px 8px;
+  display: inline-block;
+}
+
+.navItem:hover {
+  background-color: #f4afab;
+  border-radius: 25px;
+}
+
+.navItem:button {
+}
 
 .content {
-  margin-left: 20px;
+  margin: 50px 40px;
+  display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+}
+
+article {
+  display: inline-block;
+  padding: 8px;
+}
+
+.footer {
+  background-color: #fed9b7;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.footer div {
 }
 
 a {
   text-decoration: none;
   color: black;
 }
-
-/* .footer {
-  display: flex-end;
-} */
